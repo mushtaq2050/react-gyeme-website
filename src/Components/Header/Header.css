@@ -1,0 +1,83 @@
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .3rem;
+}
+.logo img{
+    width: 20rem;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+.menu a{
+    color: white;
+    font-size: 1.6rem;
+    /* font-weight: 300; */
+}
+.menu a:hover{
+    cursor: pointer;
+    color:  #CC5500;
+}
+.join-btn button{
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 1rem 1.3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.join-btn button a{
+    color: black;
+}
+.mobile-menu-container{
+    position: relative;
+    display: none;
+}
+.mobile-menu-container svg{
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    font-size: 2.8rem;
+}
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    gap: 1.5rem;
+    z-index: 999;
+    padding: 1rem 2.1rem;
+    border-radius: .7rem;
+}
+.menu-mobile a{
+    color: white;
+    font-size: 1.6rem;
+}
+.mobile-btn{
+    padding: 1rem .6rem;
+    width:10rem ;
+    background-color: var(--orange);
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+@media screen and (max-width:700px) {
+    .menu{
+        display: none;
+    }
+    .join-btn button{
+        display: none;
+    }
+    .mobile-menu-container{
+        display: block;
+    }
+}
+ 

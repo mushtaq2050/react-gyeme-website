@@ -1,0 +1,157 @@
+
+.reasons-container{
+    display: flex;
+    gap: 5rem;
+    margin-top: 11rem;
+}
+.reasons-img-container{
+    display: grid;
+    grid-template-areas: "left right right"
+                         "left belowa belowb";
+                      
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+.left-img{
+    grid-area: left;
+    height: 48rem;
+    width: 20rem;
+}
+.right-img{
+    grid-area: right;
+    width: 41rem;
+    height: 30rem;
+}
+.below-left{
+    grid-area: belowa;
+    width: 20rem;
+    height: 17rem;
+}
+.below-right{
+    grid-area: belowb;
+    width: 20rem;
+    height: 17rem;
+}
+.reason-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.reason-span{
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.why-chose{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.choose-us{
+    color: white;
+}
+.offers-container{
+    display: flex;
+    gap: 1.5rem;
+}
+.offers-container img{
+  width: 3.3rem;
+}
+.offers-container span{
+    color: white;
+    font-size: 1.6rem;
+}
+.parteners{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.parteners span{
+    color: var(--lightgray);
+    font-size: 1.6rem;
+}
+.parteners-images img{
+width: 3.5rem;
+}
+.parteners-images{
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (max-width:854px) {
+    .reasons-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:455px){
+    /* .reasons-img-container{
+        padding: 0rem 1rem;
+    } */
+    .right-img{
+        grid-area: right;
+        width: 35rem;
+        height: 30rem;
+    }
+    .below-right{
+        grid-area: belowb;
+        height: 17rem;
+        width: 17rem;
+    }
+    .below-left{
+        grid-area: belowa;
+        width: 17rem;
+        height: 17rem;
+    }
+    .left-img{
+        grid-area: left;
+        height: 48rem;
+        width: 16rem;
+    }
+
+}
+@media screen and (max-width:380px){
+    .right-img{
+        grid-area: right;
+        width: 31rem;
+        height: 30rem;
+    }
+    .below-right{
+        grid-area: belowb;
+        height: 17rem;
+        width: 15rem;
+    }
+    .below-left{
+        grid-area: belowa;
+        width: 15rem;
+        height: 17rem;
+    }
+    .left-img{
+        grid-area: left;
+        height: 48rem;
+        width: 14rem;
+    }
+    .reasons-img-container{
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width:355px){
+    .right-img{
+        grid-area: right;
+        width: 27rem;
+        height: 30rem;
+    }
+    .below-right{
+        grid-area: belowb;
+        height: 17rem;
+        width: 13rem;
+    }
+    .below-left{
+        grid-area: belowa;
+        width: 13rem;
+        height: 17rem;
+    }
+    .left-img{
+        grid-area: left;
+        height: 48rem;
+        width: 14rem;
+    }
+}

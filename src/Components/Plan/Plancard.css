@@ -1,0 +1,123 @@
+
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1.5rem;
+    /* border: 1px solid red; */
+    background-color: var(--caloryCard);
+    padding: 3rem 3rem;
+    height: 42rem;
+    border-radius: .5rem;
+    width: 27.5rem;
+}
+.plan-name{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.svg-plan{
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+.plan-price{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+
+}
+.plan-detail{
+    display: flex;
+    gap: 1rem;
+}
+.plan-detail img{
+    width: 2.5rem;
+}
+.plan-detail span{
+    font-size: 1.6rem;
+    color: white;
+}
+.more-benefits{
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.more-benefits img{
+width: 1.5rem;
+padding-top: .6rem;
+}
+.btn-plan{
+    width: 20rem;
+    align-self: center;
+    font-size: 1.7rem;
+    padding: 1.3rem 0rem;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+.buttonss{
+    text-align: center;
+}
+
+/* From Uiverse.io by nikk7007 */ 
+.button {
+    --color: #00A97F;
+    padding: 0.8rem 1.7rem;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: black;
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 7.5rem;
+    height: 4.5rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--orange);
+    color: white;
+    transition: 1s ease;
+    border-color: var(--orange);
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 40rem;
+    width: 40rem;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   

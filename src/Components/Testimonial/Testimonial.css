@@ -1,0 +1,136 @@
+
+.testiminial{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.testimonial-container{
+    margin-top: 5rem;
+}
+.testimonial-span{
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.about-testimonial{
+color: white;
+}
+.testimonial-name{
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+.testimonial-status{
+    font-size: 1.7rem;
+    color: white;
+}
+.left-testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+.testimonial-reviews{
+    font-size: 1.6rem;
+    color: white;
+    width: 64rem;
+    letter-spacing:.2rem;
+}
+
+.right-testimonial{
+    /* position: relative; */
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.testimonial-container{
+    display: flex;
+    gap: 3rem;
+}
+.testimonial-image img{
+    width: 22rem;
+    height: 25rem;
+    object-fit: cover;
+    /* position: absolute; */
+    position: absolute;
+    top: 2rem;
+    right: 14rem;
+}
+.arrows{
+    position: absolute;
+    top: 19rem;
+right:41rem;
+    z-index: 999;
+    cursor: pointer;
+    display: flex;
+}
+.arrows img{
+    width: 2.5rem;
+    padding: 1rem;
+}
+.div1{
+    border: 2px solid var(--orange);
+    height: 25rem;
+    width: 22rem;
+    position: absolute;
+    background-color: transparent;
+    top:.2rem;
+    right: 18rem;
+}
+
+@media screen and (max-width:858px) {
+    .testimonial-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .div1{
+      display: none;
+    }
+    .testimonial-image img{
+        width: 22rem;
+        height: 25rem;
+        object-fit: cover;
+        /* position: absolute; */
+        position: absolute;
+        top: 2rem;
+        right: -4rem;
+    }
+    .arrows{
+        position: absolute;
+        color: red;
+        top: 27.5rem;
+    right:4rem;
+        z-index: 999;
+        cursor: pointer;
+        display: flex;
+    }
+}
+@media screen and (max-width:480px) {
+    .testimonial-reviews{
+        font-size: 1.6rem;
+        color: white;
+        width: 38rem;
+        letter-spacing:.2rem;
+    }
+    .testimonial-image img{
+        width: 22rem;
+        height: 25rem;
+        object-fit: cover;
+        /* position: absolute; */
+        position: absolute;
+        top: 2rem;
+        right: -10rem;
+    }
+    .arrows{
+    
+        top: 27.5rem;
+    right:-2rem;
+        z-index: 999;
+        cursor: pointer;
+        display: flex;
+    }
+}

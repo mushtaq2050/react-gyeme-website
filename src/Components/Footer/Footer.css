@@ -1,0 +1,25 @@
+.footer-hr{
+    margin-top: 16rem;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 10rem; */
+    padding:15rem 0rem ;
+}
+
+.footer-img-container-footer{
+    display: flex;
+    gap: 8rem;
+}
+.footer-img-container-footer img{
+    cursor: pointer;
+    width: 3rem;
+}
+
+.footer-logo img{
+    width: 16rem;
+}

@@ -1,0 +1,66 @@
+.plan-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.heading-container-plans{
+    display: flex;
+    justify-content: space-around;
+}
+.heading-container-plans span{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.journey-span{
+    color: white;
+}
+.plan-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5rem;
+
+}
+.prememium{
+    /* padding: 10rem 2rem !important; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* border: 1px solid red; */
+    background: var(--planCard);
+    padding: 3rem 3rem;
+    height: 45.5rem;
+    width: 27.5rem;
+    border-radius: .5rem;
+    align-self: flex-start;
+    
+}
+.btn-plan-premium{
+    width: 20rem;
+    align-self:center ;
+    font-size: 1.7rem;
+    padding: 1.3rem 0rem;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: var(--orange);
+    font-weight: 600;
+}
+.svg-plan-premium{
+    font-size: 3.5rem;
+    color: white;
+}
+@media screen and (max-width:854px) {
+    .heading-container-plans{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .plan-card-container{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .plan-container{
+        align-items: center;
+    }
+}

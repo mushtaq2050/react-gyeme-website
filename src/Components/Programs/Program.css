@@ -1,0 +1,40 @@
+
+.headings-program{
+    display: flex;
+    /* padding: .4rem 1.5rem; */
+    justify-content: space-around;
+    margin-top: 12rem;
+}
+.program-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+.headings-program span{
+    font-size: 4rem;
+    /* color: white; */
+    font-weight: bolder;
+}
+.program{
+    color: white;
+}
+.shape{
+    color: white;
+}
+.card-container{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+@media screen and (max-width:854px) {
+    .headings-program{
+        flex-direction: column;
+    }
+    .program-container{
+       align-items: center;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}

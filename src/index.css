@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --lightgray: #d9d9d9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464d53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);
+  --appColor: #3c3f45;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  /* background-color: var(--appColor); */
+  font-family: "Poppins", sans-serif;
+}
+.below-gym{
+  background-color: var(--appColor);
+}
+.container{
+  padding: 10px 29px;
+}
+a{
+  text-decoration: none;
+}
+.bg-yellow{
+  background-color:var(--orange)
+}
+.stroke-text{
+  color: transparent;
+  -webkit-text-stroke-width:1px ;
+  -webkit-text-stroke-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+   @media screen and (max-width:858px) {
+    html{
+      font-size: 55%;
+    }
+    }  
+   @media screen and (max-width:700px) {
+    html{
+      font-size: 45%;
+    }
+    }  
+    @media screen and (max-width:330px){
+      html{
+        font-size: 38%;
+      }
+    }
